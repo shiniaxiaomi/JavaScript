@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #box{ width: 100px;height: 100px;background-color:pink;display: none;}
+    </style>
+</head>
+<body>
+    <button id="bnt">按钮</button>
+    <div id="box"></div>
+</body>
+</html>
+
+<script type="text/javascript">
+    var box=document.getElementById('box');
+    var bnt=document.getElementById('bnt');
+
+    bnt.onmouseover=function () {
+        box.style.display='block';
+    }
+    bnt.onmouseout=function () {
+        box.style.display='none';
+    }
+
+
+</script>
+
+

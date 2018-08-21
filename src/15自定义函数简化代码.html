@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div{background-color: pink;display: none}
+    </style>
+</head>
+<body>
+    <button id="bnt01">按钮1</button>
+    <button id="bnt02">按钮2</button>
+    <button id="bnt03">按钮3</button>
+    <div id="box01">我是盒子1</div>
+    <div id="box02">我是盒子2</div>
+    <div id="box03">我是盒子3</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+//    var bnt01=document.getElementById('bnt01');
+//    var box01=document.getElementById('box01');
+//    bnt01.onclick=function () {
+//        box01.style.display='block';
+//    }
+//
+//    var bnt02=document.getElementById('bnt02');
+//    var box02=document.getElementById('box02');
+//    bnt02.onclick=function () {
+//        box02.style.display='block';
+//    }
+//
+//    var bnt03=document.getElementById('bnt03');
+//    var box03=document.getElementById('box03');
+//    bnt03.onclick=function () {
+//        box03.style.display='block';
+//    }
+
+
+    //使用自定义函数简化后的代码
+    function xianshi(bntName, boxName) {
+        var bnt=document.getElementById(bntName);
+        var box=document.getElementById(boxName);
+        bnt.onclick=function () {
+            box.style.display='block';
+        }
+    }
+
+    xianshi('bnt01','box01');
+    xianshi('bnt02','box02');
+    xianshi('bnt03','box03');
+</script>
+
+

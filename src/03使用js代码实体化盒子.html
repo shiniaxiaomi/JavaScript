@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #box01 { width: 100px; height: 100px; background-color: pink; }
+    </style>
+</head>
+<body>
+    <div id="box01">盒子1</div>
+    <div id="box02">盒子2</div>
+</body>
+</html>
+
+<script type="text/javascript">
+//    document.getElementById('box02').style.width='200px';
+//    document.getElementById('box02').style.height='200px';
+//    document.getElementById('box02').style.backgroundColor='green';
+
+    //使用变量来存储,不需要每次都去取id为'box02'的对象
+    var box=document.getElementById('box02');
+    box.style.width='200px';
+    box.style.height='200px';
+    box.style.backgroundColor='green';
+
+</script>
+
+

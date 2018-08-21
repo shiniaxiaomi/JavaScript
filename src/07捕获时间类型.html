@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{ margin: 0;padding: 0;list-style: none;}
+        #ul01 {width:500px; margin: 100px auto;}
+        #ul01 li { width:500px;height: 30px; line-height: 30px; text-align: center;background-color: aqua;border: 1px solid #000;}
+    </style>
+</head>
+<body>
+    <ul id="ul01">
+        <li id="li01">单击</li>
+        <li id="li02">双击</li>
+        <li id="li03">鼠标移入</li>
+        <li id="li04">鼠标移除</li>
+        <li id="li05">打酱油的</li>
+    </ul>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    var li01=document.getElementById('li01');
+    li01.onclick=function () {
+        alert('鼠标单击事件');
+    }
+
+    var li02=document.getElementById('li02');
+    li02.ondblclick=function () {
+        alert('鼠标双击事件');
+    }
+
+    var li03=document.getElementById('li03');
+    li03.onmouseover=function () {
+        alert('鼠标移入');
+    }
+
+    var li04=document.getElementById('li04');
+    li04.onmouseout=function () {
+        alert('鼠标移除');
+    }
+
+
+</script>
+
+

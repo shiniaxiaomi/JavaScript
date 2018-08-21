@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .class01 { width: 100px; height: 100px; background-color: pink; }
+    </style>
+</head>
+<body>
+    <div id="box01"></div>
+    <button id="bnt01">按钮</button>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+    var box=document.getElementById('box01');
+    var bnt=document.getElementById('bnt01')
+
+    bnt.onclick=function () {
+        //这种方式不是很好,能够用css解决的问题一定不能交给js
+//        box.style.width='200px';
+//        box.style.height='200px';
+//        box.style.backgroundColor='blue';
+
+        //可以直接修改对象的class属性
+        box.className='class01';
+    }
+
+</script>
+
+

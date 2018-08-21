@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #box01 { width: 100px; height: 100px; background-color: pink; }
+    </style>
+</head>
+<body>
+    <div id="box01"></div>
+    <button id="bnt01">变宽</button>
+    <button id="bnt02">变高</button>
+    <button id="bnt03">变色</button>
+</body>
+</html>
+
+<script type="text/javascript">
+
+    var box=document.getElementById('box01');
+
+    var bnt01=document.getElementById('bnt01');
+    bnt01.onclick=function () {
+        box.style.width='200px';
+    }
+
+    var bnt02=document.getElementById('bnt02');
+    bnt02.onclick=function () {
+        box.style.height='200px';
+    }
+
+    var bnt03=document.getElementById('bnt03');
+    bnt03.onclick=function () {
+        box.style.backgroundColor='blue';
+    }
+
+
+
+</script>
+
+
